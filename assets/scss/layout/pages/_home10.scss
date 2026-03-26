@@ -1,0 +1,321 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  8.12 home 10
+/*----------------------------------------*/
+
+//banner-10
+.banner-10 {
+    &__thumb-bg {
+        &::before {
+            background: linear-gradient(360deg, rgba(3, 72, 51, 0) 0%, rgba(3, 72, 51, 0.7) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        }
+    }
+
+    &__active {
+        .testimonial-10__content-button {
+            .testimonial__content-button-btn {
+                position: absolute;
+                right: 150px;
+                top: 50%;
+                z-index: 9;
+                transform: translateY(-50%);
+                left: inherit;
+                background-color: transparent;
+                border: 1px solid #FFFFFF;
+
+                @media #{$lg} {
+                     right: 100px;
+                }
+                @media #{$md, $sm, $xs} {
+                     display: none;
+                }
+
+                i {
+                    color: #FFFFFF;
+                }
+
+                &:hover {
+                    background-color: #83CD20;
+                    border: 1px solid #83CD20;
+                }
+            }
+
+            .testimonial-next {
+                top: 60%;
+            }
+        }
+    }
+
+    &__space {
+        padding: 204px 0 303px 0;
+
+        @media #{$xl, $lg, $md} {
+            padding: 155px 0 200px 0;
+        }
+
+        @media #{$sm} {
+            padding: 100px 0 100px 0;
+        }
+
+        @media #{$xs} {
+            padding: 70px 0 70px 0;
+        }
+    }
+
+    &__btn-wrap {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+
+        .rr-btn {
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+
+            &::before {
+                background-color: #83CD20;
+            }
+
+            &:hover {
+                color: #FFFFFF;
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+//about-10
+.about-10 {
+    &__wrapper {
+        max-width: 100%;
+
+        &-media {
+            .img-wrap {
+                max-width: 298px !important;
+            }
+
+            &-image-1 {
+                width: 100% !important;
+                max-width: 298px !important;
+                height: 240px !important;
+
+                img {
+                    height: initial !important;
+                }
+            }
+
+            &-image-3 {
+                max-width: 275px !important;
+                height: 452px !important;
+            }
+
+            &-image-2 {
+                margin-left: 0 !important;
+            }
+
+            &__counter {
+                width: 298px !important;
+                height: 188px !important;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                background-color: #83CD20 !important;
+                margin-top: 10px !important;
+
+                p {
+                    font-size: 16px !important;
+                    line-height: 30px !important;
+                    color: #FFFFFF !important;
+                }
+
+                &-title {
+                    color: #FFFFFF !important;
+
+                    span {
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//blog-10
+.blog-10 {
+    &__item {
+        &-thumb {
+            &-text {
+                top: 24px;
+                right: 24px;
+                border-radius: 31px;
+            }
+        }
+    }
+}
+
+//visa-10
+.visa-10 {
+    &__area {
+        .visa-10-slider {
+            padding: 0 30px;
+        }
+    }
+
+    &__item {
+        background-color: #fff;
+        padding: 14px 14px 32px 14px;
+        border-radius: 10px;
+
+        &-thumb {
+            img {
+                border-radius: 10px;
+            }
+
+            .icon {
+                position: absolute;
+                height: 72px;
+                width: 72px;
+                background-color: #83CD20;
+                top: 10px;
+                right: 10px;
+                clip-path: polygon(50% 0%,
+                        56% 10%,
+                        63% 3%,
+                        66% 15%,
+                        76% 8%,
+                        72% 20%,
+                        85% 18%,
+                        77% 28%,
+                        90% 32%,
+                        78% 36%,
+                        86% 48%,
+                        72% 42%,
+                        76% 55%,
+                        62% 47%,
+                        65% 60%,
+                        50% 50%,
+                        35% 60%,
+                        38% 47%,
+                        24% 55%,
+                        28% 42%,
+                        14% 48%,
+                        22% 36%,
+                        10% 32%,
+                        23% 28%,
+                        15% 18%,
+                        28% 20%,
+                        24% 8%,
+                        34% 15%,
+                        37% 3%,
+                        44% 10%);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 16px;
+                color: #FFFFFF;
+
+            }
+        }
+
+        &-content {
+            .title {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30px;
+                color: #034833;
+                margin-bottom: 8px;
+                margin-top: 16px;
+                &:hover {
+                    color: #83CD20;
+                }
+            }
+
+            p {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #727272;
+                margin-bottom: 11px;
+            }
+
+            a {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 30px;
+                color: #83CD20;
+
+                i {
+                    margin-left: 5px;
+                    margin-top: 3px;
+                    font-size: 16px;
+                    color: #83CD20;
+                }
+            }
+        }
+    }
+}
+
+//choose-10
+.choose-10 {
+    &__item {
+        background-color: #F1F5EB;
+        border-radius: 20px;
+        padding: 30px 40px;
+
+        .number-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 60px;
+                color: #034833;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-fill-color: transparent;
+            }
+
+            img {
+                width: inherit;
+            }
+        }
+
+        a {
+            h4 {
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 30px;
+                color: #034833;
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #034833;
+            margin-bottom: 0;
+        }
+    }
+}
