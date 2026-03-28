@@ -275,14 +275,14 @@ h6 {
   --rr-common-black: #000000;
   --rr-common-placeholder: #4A5764;
   --rr-body-primary: #fff;
-  --rr-theme-primary: #83CD20;
+  --rr-theme-primary: #d51f26;
   --rr-theme-secondary: #07CBEB;
-  --rr-heading-primary: #034833;
+  --rr-heading-primary: #212221;
   --rr-text-body: #727272;
   --rr-text-primary: #000;
   --rr-shadow-primary: 0px 30px 60px 0px rgba(0, 15, 32, 0.1);
   --rr-background-gray: #F1F5EB;
-  --rr-background-dark-green: #034833;
+  --rr-background-dark-green: #212221;
   --rr-border-primary: 1px solid #E3DBD8;
   /**
   @font weight declaration
@@ -293,7 +293,7 @@ h6 {
   --rr-fw-light: 300;
   --rr-fw-regular: 400;
   --rr-fw-medium: 500;
-  --rr-fw-sbold: 600;
+  --rr-fw-sbold: 700;
   --rr-fw-bold: 700;
   --rr-fw-ebold: 800;
   --rr-fw-black: 900;
@@ -7919,7 +7919,7 @@ body .ui-tooltip {
   max-width: 480px;
   padding: 57px 30px 60px 30px;
   border-radius: 10px;
-  box-shadow: inset 0px 4px 0px #83CD20;
+  box-shadow: inset 0px 4px 0px #ef0505;
 }
 .banner-5__form-wrapper-subtitle {
   font-family: var(--rr-ff-heading);
@@ -17266,7 +17266,7 @@ body .ui-tooltip {
   height: 270px;
 }
 .service-5__item-thumb::before {
-  background: linear-gradient(180deg, rgba(3, 72, 51, 0) 0%, rgba(3, 72, 51, 0.7) 100%);
+  background: linear-gradient(180deg, rgba(3, 72, 51, 0) 0%, rgba(4, 4, 4, 0.7) 100%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -17670,7 +17670,7 @@ body .ui-tooltip {
 .about-5__media-circle {
   width: 210px;
   height: 210px;
-  background: #044833;
+  background: #212221;
   border-radius: 50%;
   margin: 0 auto;
   padding: 2px;
@@ -18027,7 +18027,7 @@ body .ui-tooltip {
   border-radius: 10px;
 }
 .trining__slider-item-thumb::before {
-  background: rgba(3, 72, 51, 0.7);
+  background: rgba(20, 26, 24, 0.7);
   position: absolute;
   width: 100%;
   height: 100%;
