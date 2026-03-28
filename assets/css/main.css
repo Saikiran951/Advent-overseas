@@ -11135,7 +11135,7 @@ body .ui-tooltip {
   }
 }
 .footer-5__widget-left-1 {
-  padding-left: 108px;
+  padding-left: 90px;
 }
 .footer-5__widget-left-2 {
   padding-left: 73px !important;
@@ -12004,6 +12004,7 @@ body .ui-tooltip {
 .contact-us__widget img {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
 }
 
 .contact-us__area .contact-us__title-wrapper .contact-us__form-wrapper {
@@ -21163,3 +21164,55 @@ START: Slider CSS
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* Modal Background */
+.appointment-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Modal Box */
+.appointment-modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 8% auto;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Close Button */
+.appointment-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Form */
+.appointment-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
